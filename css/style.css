@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+  width: 8px;
+  background-color: #FDEED0;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #daa33f;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background:  #ffc65d;
+}
+
+.background-image{
+    background-image: url(../img/lobo-definitivo.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+  border: 2px solid #ffffff;
+}
+
+.header{
+  padding-top: 150px;
+}
+
+.fondo-comidas, .comunicate{
+  background-color: #FDEED0;
+  background-size: cover;
+}
+
+.comidas{
+  padding: 6% 20px 6% 20px;
+}
+
+.text-comida{
+    position: absolute;
+    color: #ffffff; 
+    text-shadow: 0 0 8px rgba(255, 94, 0, 0.8);
+    font-family: 'Lobster', cursive;
+}
+
+.lobo-adn, .comunicate-text{
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.galeria-text{
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.blur-image{
+    filter: blur(0.4px); 
+}
+
+.comida-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card{
+    width: 130px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+  }
+  
+.card-inner {
+  width: inherit;
+  height: inherit;
+  border-radius: 8px;
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .circle {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(#f8e36b, #daa33f, #6e3201);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+
+  /* ------------------------------------------------------------------------------- */
+
+  body{
+    position: relative;
+    background-image: url(../img/patrro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Patua One', cursive;
+  }
+
+  .galeria-text, .lobo-adn, .comunicate-text{
+    background-image: linear-gradient(transparent,transparent,transparent,transparent, #f8e36b,#daa33f,#daa33f)
+  }
+
+.carousel-item{
+  height: 1000px;
+}
+
+.table{
+  background-color: #FDEED0;
+}
+
+.desayuno{
+  background-color: transparent;
+}
+
+
+
+
