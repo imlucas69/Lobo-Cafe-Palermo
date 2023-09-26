@@ -267,6 +267,21 @@
         </div>
     </footer>
 
+    <script>
+        const navbarToggler = document.getElementById("navbar-toggler");
+        const menuList = document.getElementById("menu");
+    
+        const menuItems = menuList.querySelectorAll("a.nav-link");
+    
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                if (menuList.classList.contains("show")) {
+                    navbarToggler.click(); 
+                }
+            });
+        });
+    </script>
+
     <!--boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     
